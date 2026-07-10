@@ -39,7 +39,7 @@ def encontrar_faixa_preta(imagem, cor_alvo=(0, 0, 0), tolerancia=15, altura_faix
         
         if faixa_encontrada:
             # Corta 38 pixels ANTES de começar o padrão
-            posicao_corte = y - 38
+            posicao_corte = y - 45
             if posicao_corte < 0:  # Evitar posições negativas
                 posicao_corte = 0
                 
@@ -107,8 +107,8 @@ def dividir_imagem_por_faixas(caminho_imagem, pasta_saida, cor_alvo):
 
 if __name__ == "__main__":
     # OBS5: Alterne as linhas abaixo conforme instruído para o seu fluxo (concatenadas vs inteiras)
-    caminho_imagem = "colunas_concatenadas_verticalmente.png"  
-    pasta_saida = "questoes_colunas" 
+    caminho_imagem = "./inteiras/pagina_enem_27.png"  
+    pasta_saida = "27" 
 
     # caminho_imagem = "./inteiras/pagina_enem_15.png"  
     # pasta_saida = "pagina_15" 
